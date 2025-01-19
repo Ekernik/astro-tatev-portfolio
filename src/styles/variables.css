@@ -1,0 +1,15 @@
+:root {
+  --color-primary: 0deg 0 88;
+  --color-primary-foreground: 248deg 8 19;
+  --color-muted: '';
+  --color-muted-foreground: 240deg 2 67;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: 248deg 8 19;
+    --color-primary-foreground: 0deg 0 88;
+    --color-muted: '';
+    --color-muted-foreground: 240deg 2 67;
+  }
+}
