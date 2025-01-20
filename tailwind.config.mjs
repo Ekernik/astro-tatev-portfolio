@@ -10,6 +10,7 @@ export default {
         muted: 'hsl(var(--color-muted) / <alpha-value>)',
         'muted-foreground':
           'hsl(var(--color-muted-foreground) / <alpha-value>)',
+        footer: 'hsl(var(--color-footer) / <alpha-value>)',
       },
     },
   },
