@@ -1,3 +1,7 @@
+---
+import Footer from '../components/Footer.astro';
+---
+
 <!doctype html>
 <html lang='en'>
   <head>
@@ -12,7 +16,8 @@
     />
     <title>Tatev Muradyan</title>
   </head>
-  <body class='p-8 bg-primary text-primary-foreground'>
+  <body class='bg-primary text-primary-foreground'>
     <slot />
+    <Footer />
   </body>
 </html>
