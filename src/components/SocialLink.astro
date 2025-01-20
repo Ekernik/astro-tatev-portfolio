@@ -1,0 +1,13 @@
+---
+const { href, Icon } = Astro.props;
+---
+
+<li
+  class='p-2 border border-transparent hover:border-primary-foreground rounded-lg'
+>
+  <a
+    href={href}
+    class='outline-offset-8 outline-4'
+    >{(<Icon size='50' />)}</a
+  >
+</li>
