@@ -1,14 +1,21 @@
 ---
+import profile_1 from '../assets/profile_1.jpg';
+import AboutMe from '../components/AboutMe.astro';
 import Header from '../components/Header.astro';
-import NavMenu from '../components/NavMenu.astro';
 import SocialMediaLinks from '../components/SocialMediaLinks.astro';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 ---
 
 <Layout>
-  <Header />
-  <SocialMediaLinks />
-  <NavMenu />
-  <p>Hello world</p>
+  <main class='p-8'>
+    <Header />
+    <img
+      src={profile_1.src}
+      class='rounded-lg shadow-md'
+    />
+    <SocialMediaLinks />
+    <!-- <NavMenu /> -->
+    <AboutMe />
+  </main>
 </Layout>
