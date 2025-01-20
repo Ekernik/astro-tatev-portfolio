@@ -1,0 +1,81 @@
+---
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import chicago_1 from '../assets/chicago_1.png';
+import foreigner from '../assets/foreigner.png';
+import teacher from '../assets/teacher.jpg';
+import Image from './Image.astro';
+---
+
+<article class='text-lg flex flex-col gap-4'>
+  <h2 class='text-3xl font-bold mb-2'>About me</h2>
+
+  <p>
+    Hi, I'm <strong>Tatev Muradian</strong>, a passionate violinist dedicated to
+    creating music that inspires and connects.
+  </p>
+
+  <p>
+    Born in Armenia and raised in Russia, my musical journey began at the School
+    of Arts in Kirishi, where I studied with <strong>Olga Smirnova</strong>. I
+    honed my craft at the Saint-Petersburg Music College and State Conservatory,
+    learning from esteemed mentors like <strong>Liya G. Melik-Muradian</strong> and
+    <a
+      href='https://divertissementorchestra.com/eng/about/ilya-ioff/'
+      target='_blank'
+      class='inline-flex gap-1 underline underline-offset-2 text-link-foreground'
+      ><strong>Ilya V. Ioff</strong><FaExternalLinkAlt size='12' /></a
+    >.
+  </p>
+
+  <Image src={teacher.src} />
+
+  <p>
+    I've performed across Europe and the United States on prestigious stages,
+    collaborating with leading orchestras and artists. Highlights of my career
+    include:
+  </p>
+
+  <ul class='list-disc list-inside space-y-8'>
+    <li>
+      Playing with the <strong>Mariinsky Theatre Orchestra</strong> under <a
+        href='https://en.wikipedia.org/wiki/Valery_Gergiev'
+        target='_blank'
+        class='inline-flex gap-1 underline underline-offset-2 text-link-foreground'
+        ><strong>Valery Gergiev</strong><FaExternalLinkAlt size='12' /></a
+      >.
+    </li>
+    <li>
+      Touring the UK with the <strong>Britten-Shostakovich Orchestra</strong> in
+      venues like Cadogan Hall in London.
+    </li>
+    <li>
+      Serving as Concertmaster of <strong
+        >Chicago's “Intermezzi” Orchestra</strong
+      >.
+      <Image src={chicago_1.src} />
+    </li>
+    <li>
+      Collaborating with the rock band <strong>Foreigner</strong> and cellist <strong
+        >Dave Eggar</strong
+      >.
+      <Image src={foreigner.src} />
+    </li>
+  </ul>
+
+  <p>
+    My repertoire spans classical, jazz, and modern genres, and I've received
+    accolades such as the Golden Palmyra Festival Laureate and victories in
+    Russian Olympiads in solfeggio and harmony.
+  </p>
+
+  <p>
+    Currently based in the United States, I continue to perform, explore the
+    local music scene, and contribute to the vibrant world of classical and
+    contemporary music.
+  </p>
+
+  <p>
+    When I'm not playing the violin, you'll find me exploring photography,
+    sports, or traveling, always inspired by art and science.
+  </p>
+</article>
