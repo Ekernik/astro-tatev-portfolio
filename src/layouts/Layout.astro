@@ -14,9 +14,24 @@ import Footer from '../components/Footer.astro';
       name='generator'
       content={Astro.generator}
     />
-    <title>Tatev Muradyan</title>
+    <link
+      rel='canonical'
+      href='https://tateviolin.com'
+    />
+    <title>
+      Tatev Muradian – Professional Violinist | Classical, Contemporary &
+      Orchestral Music
+    </title>
+    <meta
+      name='description'
+      content='Discover Tatev Muradian, an accomplished violinist with international experience in classical, orchestral, and modern music. Explore her performances with leading ensembles, prestigious venues, and her ongoing contributions to the American music scene.'
+    />
+    <meta
+      name='keywords'
+      content='Tatev Muradian, Violinist, Professional violinist, Classical music violinist, Orchestral music performer, Violinist in the United States, Violinist for hire, International violinist, Classical and contemporary music, Mariinsky Theatre violinist, Concertmaster Chicago, Britten-Shostakovich Orchestra, Violin performances in London, Violinist collaborations, Modern violinist'
+    />
   </head>
-  <body class='bg-primary text-primary-foreground'>
+  <body class='bg-primary text-primary-foreground max-h-screen'>
     <slot />
     <Footer />
   </body>
