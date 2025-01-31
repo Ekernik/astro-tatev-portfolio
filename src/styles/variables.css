@@ -4,6 +4,7 @@
   --color-muted: '';
   --color-muted-foreground: 240deg 2 67;
   --color-footer: 0deg 0 80;
+  --color-footer-foreground: 0deg 0 50;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +13,7 @@
     --color-primary-foreground: 0deg 0 88;
     --color-muted: '';
     --color-muted-foreground: 240deg 2 67;
-    --color-footer: 0deg 0 80;
+    --color-footer: 220deg 20 10;
+    --color-footer-foreground: 0deg 0 50;
   }
 }
