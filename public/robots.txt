@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://tateviolin.com/sitemap.xml
