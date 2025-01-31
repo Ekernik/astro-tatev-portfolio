@@ -1,5 +1,5 @@
 ---
-const { href, Icon } = Astro.props;
+const { href, Icon, title } = Astro.props;
 ---
 
 <li
@@ -8,6 +8,8 @@ const { href, Icon } = Astro.props;
   <a
     href={href}
     class='outline-offset-8 outline-4'
+    title={title}
+    itemprop='sameAs'
     >{(<Icon size='50' />)}</a
   >
 </li>

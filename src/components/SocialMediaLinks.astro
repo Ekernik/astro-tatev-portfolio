@@ -1,31 +1,47 @@
 ---
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaTelegramPlane,
-  FaYoutube,
-} from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import gigSalad from '../assets/gigsalad.png';
 import SocialLink from './SocialLink.astro';
 ---
 
-<ul class='flex gap-4 mt-4 mb-10'>
+<ul
+  class='flex gap-4 mt-4'
+  itemscope
+  itemtype='http://schema.org/Person'
+>
   <SocialLink
-    href='#'
+    href='https://www.instagram.com/ekernkrekern'
     Icon={FaInstagram}
+    title="Tatev's Instagram page"
   />
 
   <SocialLink
-    href='#'
-    Icon={FaYoutube}
-  />
-
-  <SocialLink
-    href='#'
+    href='https://www.linkedin.com/in/tatev-muradyan-598169318/'
     Icon={FaLinkedin}
+    title="Tatev's LinkedIn profile"
   />
 
   <SocialLink
-    href='#'
+    href='https://t.me/tmur7'
     Icon={FaTelegramPlane}
+    title="Tatev's Telegram profile"
   />
+
+  <li
+    class='w-[68px] grid place-content-center border border-transparent hover:border-primary-foreground rounded-lg'
+  >
+    <a
+      href='https://www.gigsalad.com/tatev_muradyan_professional_violinist_chicago'
+      class='outline-offset-8 outline-4 block'
+      title='Book Tatev on GigSalad.com'
+      itemprop='sameAs'
+      ><img
+        src={gigSalad.src}
+        alt=''
+        height={52}
+        width={52}
+        class='grayscale-[100%]'
+      /></a
+    >
+  </li>
 </ul>
