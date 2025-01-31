@@ -1,11 +1,30 @@
-<footer class='flex flex-col justify-center items-center py-4 bg-footer'>
-  <p>&copy; copyright 2025</p>
-  <p class='text-sm text-muted-foreground'>
+<footer
+  class='hidden h-[72px] md:flex flex-col justify-center items-center py-4 bg-footer'
+  itemscope
+  itemtype='http://schema.org/CreativeWork'
+>
+  <small
+    class='text-footer-foreground'
+    itemprop='copyrightYear'
+    >&copy; copyright <span itemprop='copyrightYear'>2025</span></small
+  >
+  <small class='text-sm text-footer-foreground'>
     developed by loving husband: <a
       href='https://github.com/Ekernik'
       target='_blank'
       class='underline font-bold hover:text-primary-foreground transition-colors'
-      >Ekernik</a
+      itemprop='author'
+      itemscope
+      itemtype='http://schema.org/Person'
+      ><span itemprop='name'>ekernik</span>
+      <meta
+        itemprop='url'
+        content='https://github.com/Ekernik'
+      />
+      <meta
+        itemprop='jobTitle'
+        content='Software Developer'
+      /></a
     >
-  </p>
+  </small>
 </footer>
