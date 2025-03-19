@@ -1,15 +1,27 @@
 ---
-const { href, Icon, title } = Astro.props;
+const { href, Icon, title, alt } = Astro.props;
 ---
 
-<li
-  class='p-2 border border-transparent hover:border-primary-foreground rounded-lg'
->
+<li class='flex-1 flex items-center'>
   <a
     href={href}
-    class='outline-offset-8 outline-4'
-    title={title}
+    class='p-2 w-full h-full inline-flex items-center gap-2 border border-slate-500 rounded-lg outline-offset-2 outline-slate-800 outline-4 hover:bg-white/50 transition-all'
+    title={alt}
     itemprop='sameAs'
-    >{(<Icon size='50' />)}</a
+    target='_blank'
+    >{
+      typeof Icon === 'string' ? (
+        <img
+          src={Icon}
+          alt=''
+          height={52}
+          width={52}
+          class='grayscale-[100%]'
+        />
+      ) : (
+        <Icon size='50' />
+      )
+    }
+    {title}</a
   >
 </li>

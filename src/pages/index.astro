@@ -10,8 +10,10 @@ import '../styles/global.css';
   <main class='md:max-h-[calc(100vh-72px)] mx-auto flex justify-center'>
     <section class='p-8 flex flex-col items-center'>
       <Header />
-      <ProfileImage client:only='react' />
-      <SocialMediaLinks />
+      <div class='flex flex-col gap-4 md:flex-row items-start'>
+        <ProfileImage client:only='react' />
+        <SocialMediaLinks />
+      </div>
     </section>
 
     <!-- <AboutMe /> -->

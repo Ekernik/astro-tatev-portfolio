@@ -1,47 +1,47 @@
 ---
 import { FaInstagram, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { IoLogoVenmo } from 'react-icons/io5';
 import gigSalad from '../assets/gigsalad.png';
 import SocialLink from './SocialLink.astro';
 ---
 
 <ul
-  class='flex gap-4 mt-4'
+  class='w-full flex flex-col gap-4'
   itemscope
   itemtype='http://schema.org/Person'
 >
   <SocialLink
-    href='https://www.instagram.com/ekernkrekern'
+    href='https://www.gigsalad.com/tatev_muradyan_professional_violinist_chicago'
+    Icon={gigSalad.src}
+    title='Book Me'
+    alt='Book Tatev on GigSalad.com'
+  />
+
+  <SocialLink
+    href='https://venmo.com/u/krekern'
+    Icon={IoLogoVenmo}
+    title='Tip Me'
+    alt='Tip Tatev thru Venmo'
+  />
+
+  <SocialLink
+    href='https://www.instagram.com/tateviolin'
     Icon={FaInstagram}
-    title="Tatev's Instagram page"
+    title='My Instagram'
+    alt="Tatev's Instagram page"
   />
 
   <SocialLink
     href='https://www.linkedin.com/in/tatev-muradyan-598169318/'
     Icon={FaLinkedin}
-    title="Tatev's LinkedIn profile"
+    title='Connect with me on LinkedIn'
+    alt="Tatev's LinkedIn profile"
   />
 
   <SocialLink
     href='https://t.me/tmur7'
     Icon={FaTelegramPlane}
-    title="Tatev's Telegram profile"
+    title='Message me on Telegram'
+    alt="Tatev's Telegram profile"
   />
-
-  <li
-    class='w-[68px] grid place-content-center border border-transparent hover:border-primary-foreground rounded-lg'
-  >
-    <a
-      href='https://www.gigsalad.com/tatev_muradyan_professional_violinist_chicago'
-      class='outline-offset-8 outline-4 block'
-      title='Book Tatev on GigSalad.com'
-      itemprop='sameAs'
-      ><img
-        src={gigSalad.src}
-        alt=''
-        height={52}
-        width={52}
-        class='grayscale-[100%]'
-      /></a
-    >
-  </li>
 </ul>
