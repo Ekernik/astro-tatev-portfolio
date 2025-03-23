@@ -31,7 +31,7 @@ export default function ProfileImage() {
 
   return (
     <div
-      className='overflow-hidden max-w-sm'
+      className='w-full overflow-hidden max-w-sm'
       ref={emblaRef}
     >
       <div className='flex gap-2'>

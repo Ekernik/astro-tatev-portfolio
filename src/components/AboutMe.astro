@@ -1,24 +1,39 @@
 ---
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import biography_1 from '../assets/biography_01.jpg';
+import biography_2 from '../assets/biography_02.jpg';
+import britten_1 from '../assets/britten_01.jpg';
+import britten_2 from '../assets/britten_02.jpg';
 import chicago_1 from '../assets/chicago_1.png';
-import foreigner from '../assets/foreigner.png';
-import teacher from '../assets/teacher.jpg';
-import Image from './Image.astro';
+import chicago_2 from '../assets/chicago_2.jpg';
+import foreigner_01 from '../assets/foreigner_01.png';
+import foreigner_02 from '../assets/foreigner_02.jpg';
+import foreigner_03 from '../assets/foreigner_03.jpg';
+import foreigner_04 from '../assets/foreigner_04.jpg';
+import mariinsky_2 from '../assets/mariinksy_02.png';
+import mariinsky_1 from '../assets/mariinsky_01.jpg';
 ---
 
-<article class='text-lg flex flex-col gap-4'>
-  <h2 class='text-3xl font-bold mb-2'>About me</h2>
+<article
+  class='mt-4 overflow-y-auto text-lg md:text-xl flex flex-col gap-4 md:pr-4'
+>
+  <h2 class='text-3xl md:text-4xl font-bold mb-2'>About me</h2>
 
-  <p>
+  <p class='max-w-screen-md'>
     Hi, I'm <strong>Tatev Muradian</strong>, a passionate violinist dedicated to
     creating music that inspires and connects.
   </p>
 
-  <p>
+  <p class='max-w-screen-md'>
     Born in Armenia and raised in Russia, my musical journey began at the School
     of Arts in Kirishi, where I studied with <strong>Olga Smirnova</strong>. I
     honed my craft at the Saint-Petersburg Music College and State Conservatory,
-    learning from esteemed mentors like <strong>Liya G. Melik-Muradian</strong> and
+    learning from esteemed mentors like <a
+      href='https://classical.music.apple.com/in/recording/igor-stravinsky-1882-pp61-1510087396?l=en-GB'
+      target='_blank'
+      class='inline-flex gap-1 underline underline-offset-2 text-link-foreground'
+      ><strong>Liya G. Melik-Muradian</strong><FaExternalLinkAlt size='12' /></a
+    > and
     <a
       href='https://divertissementorchestra.com/eng/about/ilya-ioff/'
       target='_blank'
@@ -27,15 +42,28 @@ import Image from './Image.astro';
     >.
   </p>
 
-  <Image src={teacher.src} />
+  <div class='flex flex-col lg:flex-row gap-2 max-w-screen-md mt-1'>
+    <img
+      src={biography_1.src}
+      loading='lazy'
+      alt=''
+      class='lg:max-h-72 flex-1 rounded-lg shadow-md object-cover'
+    />
+    <img
+      src={biography_2.src}
+      loading='lazy'
+      alt=''
+      class='lg:max-h-72 flex-[2] rounded-lg shadow-md object-cover'
+    />
+  </div>
 
-  <p>
+  <p class='max-w-screen-md'>
     I've performed across Europe and the United States on prestigious stages,
     collaborating with leading orchestras and artists. Highlights of my career
     include:
   </p>
 
-  <ul class='list-disc list-inside space-y-8'>
+  <ul class='list-disc list-inside space-y-8 max-w-screen-md'>
     <li>
       Playing with the <strong>Mariinsky Theatre Orchestra</strong> under <a
         href='https://en.wikipedia.org/wiki/Valery_Gergiev'
@@ -43,38 +71,106 @@ import Image from './Image.astro';
         class='inline-flex gap-1 underline underline-offset-2 text-link-foreground'
         ><strong>Valery Gergiev</strong><FaExternalLinkAlt size='12' /></a
       >.
+      <div class='flex flex-col lg:flex-row gap-2 w-screen-md mt-1'>
+        <img
+          src={mariinsky_2.src}
+          loading='lazy'
+          alt=''
+          class='lg:max-h-72 flex-[2] rounded-lg shadow-md object-cover'
+        />
+        <img
+          src={mariinsky_1.src}
+          loading='lazy'
+          alt=''
+          class='lg:max-h-72 flex-1 rounded-lg shadow-md object-cover'
+        />
+      </div>
     </li>
+
     <li>
       Touring the UK with the <strong>Britten-Shostakovich Orchestra</strong> in
       venues like Cadogan Hall in London.
+
+      <div class='flex flex-col lg:flex-row gap-2 w-screen-md mt-1'>
+        <img
+          src={britten_2.src}
+          loading='lazy'
+          alt=''
+          class='lg:max-h-72 flex-1 rounded-lg shadow-md object-cover'
+        />
+        <img
+          src={britten_1.src}
+          loading='lazy'
+          alt=''
+          class='lg:max-h-72 flex-[2] rounded-lg shadow-md object-cover'
+        />
+      </div>
     </li>
     <li>
       Serving as Concertmaster of <strong
         >Chicago's “Intermezzi” Orchestra</strong
       >.
-      <Image src={chicago_1.src} />
+      <div class='flex flex-col lg:flex-row gap-2 mt-1'>
+        <img
+          src={chicago_2.src}
+          loading='lazy'
+          alt=''
+          class='lg:max-h-60 flex-1 rounded-lg shadow-md object-cover'
+        />
+        <img
+          src={chicago_1.src}
+          loading='lazy'
+          alt=''
+          class='lg:max-h-60 flex-1 rounded-lg shadow-md object-cover'
+        />
+      </div>
     </li>
     <li>
       Collaborating with the rock band <strong>Foreigner</strong> and cellist <strong
         >Dave Eggar</strong
       >.
-      <Image src={foreigner.src} />
+      <div class='grid grid-cols-2 gap-2 max-w-screen-md mt-1'>
+        <img
+          src={foreigner_01.src}
+          loading='lazy'
+          alt=''
+          class='rounded-lg shadow-md object-cover'
+        />
+        <img
+          src={foreigner_02.src}
+          loading='lazy'
+          alt=''
+          class='rounded-lg shadow-md object-cover'
+        />
+        <img
+          src={foreigner_03.src}
+          loading='lazy'
+          alt=''
+          class='rounded-lg shadow-md object-cover'
+        />
+        <img
+          src={foreigner_04.src}
+          loading='lazy'
+          alt=''
+          class='rounded-lg shadow-md object-cover'
+        />
+      </div>
     </li>
   </ul>
 
-  <p>
+  <p class='max-w-screen-md'>
     My repertoire spans classical, jazz, and modern genres, and I've received
     accolades such as the Golden Palmyra Festival Laureate and victories in
     Russian Olympiads in solfeggio and harmony.
   </p>
 
-  <p>
+  <p class='max-w-screen-md'>
     Currently based in the United States, I continue to perform, explore the
     local music scene, and contribute to the vibrant world of classical and
     contemporary music.
   </p>
 
-  <p>
+  <p class='max-w-screen-md'>
     When I'm not playing the violin, you'll find me exploring photography,
     sports, or traveling, always inspired by art and science.
   </p>
