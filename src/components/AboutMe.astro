@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import biography_1 from '../assets/biography_01.jpg';
 import biography_2 from '../assets/biography_02.jpg';
@@ -43,14 +44,14 @@ import mariinsky_1 from '../assets/mariinsky_01.jpg';
   </p>
 
   <div class='flex flex-col lg:flex-row gap-2 max-w-screen-md mt-1'>
-    <img
-      src={biography_1.src}
+    <Image
+      src={biography_1}
       loading='lazy'
       alt=''
       class='lg:max-h-72 flex-1 rounded-lg shadow-md object-cover'
     />
-    <img
-      src={biography_2.src}
+    <Image
+      src={biography_2}
       loading='lazy'
       alt=''
       class='lg:max-h-72 flex-[2] rounded-lg shadow-md object-cover'
@@ -72,14 +73,14 @@ import mariinsky_1 from '../assets/mariinsky_01.jpg';
         ><strong>Valery Gergiev</strong><FaExternalLinkAlt size='12' /></a
       >.
       <div class='flex flex-col lg:flex-row gap-2 w-screen-md mt-1'>
-        <img
-          src={mariinsky_2.src}
+        <Image
+          src={mariinsky_2}
           loading='lazy'
           alt=''
           class='lg:max-h-72 flex-[2] rounded-lg shadow-md object-cover'
         />
-        <img
-          src={mariinsky_1.src}
+        <Image
+          src={mariinsky_1}
           loading='lazy'
           alt=''
           class='lg:max-h-72 flex-1 rounded-lg shadow-md object-cover'
@@ -92,14 +93,14 @@ import mariinsky_1 from '../assets/mariinsky_01.jpg';
       venues like Cadogan Hall in London.
 
       <div class='flex flex-col lg:flex-row gap-2 w-screen-md mt-1'>
-        <img
-          src={britten_2.src}
+        <Image
+          src={britten_2}
           loading='lazy'
           alt=''
           class='lg:max-h-72 flex-1 rounded-lg shadow-md object-cover'
         />
-        <img
-          src={britten_1.src}
+        <Image
+          src={britten_1}
           loading='lazy'
           alt=''
           class='lg:max-h-72 flex-[2] rounded-lg shadow-md object-cover'
@@ -111,14 +112,14 @@ import mariinsky_1 from '../assets/mariinsky_01.jpg';
         >Chicago's “Intermezzi” Orchestra</strong
       >.
       <div class='flex flex-col lg:flex-row gap-2 mt-1'>
-        <img
-          src={chicago_2.src}
+        <Image
+          src={chicago_2}
           loading='lazy'
           alt=''
           class='lg:max-h-60 flex-1 rounded-lg shadow-md object-cover'
         />
-        <img
-          src={chicago_1.src}
+        <Image
+          src={chicago_1}
           loading='lazy'
           alt=''
           class='lg:max-h-60 flex-1 rounded-lg shadow-md object-cover'
@@ -130,26 +131,26 @@ import mariinsky_1 from '../assets/mariinsky_01.jpg';
         >Dave Eggar</strong
       >.
       <div class='grid grid-cols-2 gap-2 max-w-screen-md mt-1'>
-        <img
-          src={foreigner_01.src}
+        <Image
+          src={foreigner_01}
           loading='lazy'
           alt=''
           class='rounded-lg shadow-md object-cover'
         />
-        <img
-          src={foreigner_02.src}
+        <Image
+          src={foreigner_02}
           loading='lazy'
           alt=''
           class='rounded-lg shadow-md object-cover'
         />
-        <img
-          src={foreigner_03.src}
+        <Image
+          src={foreigner_03}
           loading='lazy'
           alt=''
           class='rounded-lg shadow-md object-cover'
         />
-        <img
-          src={foreigner_04.src}
+        <Image
+          src={foreigner_04}
           loading='lazy'
           alt=''
           class='rounded-lg shadow-md object-cover'
