@@ -1,6 +1,7 @@
 ---
 import { FaInstagram, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 import { IoLogoVenmo } from 'react-icons/io5';
+import { SiZelle } from 'react-icons/si';
 import gigSalad from '../assets/gigsalad.png';
 import SocialLink from './SocialLink.astro';
 ---
@@ -15,13 +16,6 @@ import SocialLink from './SocialLink.astro';
     Icon={gigSalad.src}
     title='Book Me'
     alt='Book Tatev on GigSalad.com'
-  />
-
-  <SocialLink
-    href='https://venmo.com/u/krekern'
-    Icon={IoLogoVenmo}
-    title='Tip Me'
-    alt='Tip Tatev thru Venmo'
   />
 
   <SocialLink
@@ -44,4 +38,24 @@ import SocialLink from './SocialLink.astro';
     title='Message me on Telegram'
     alt="Tatev's Telegram profile"
   />
+
+  <div>
+    <h3 class='text-center'>Tip Me</h3>
+    <div class='flex gap-2 justify-center'>
+      <SocialLink
+        href='https://www.zellepay.com/qr-codes/?data=eyJ0b2tlbiI6IjMyMTQ2NDkzMTMiLCJuYW1lIjoiVEFURVYifQ=='
+        Icon={SiZelle}
+        title='Zelle'
+        alt='Tip Tatev thru Zelle'
+        className='max-w-20 aspect-square *:flex-col'
+      />
+      <SocialLink
+        href='https://venmo.com/u/krekern'
+        Icon={IoLogoVenmo}
+        title='Venmo'
+        alt='Tip Tatev thru Venmo'
+        className='max-w-20 aspect-square *:flex-col'
+      />
+    </div>
+  </div>
 </ul>

@@ -1,8 +1,8 @@
 ---
-const { href, Icon, title, alt } = Astro.props;
+const { href, Icon, title, alt, className } = Astro.props;
 ---
 
-<li class='flex-1 flex items-center'>
+<li class=`flex-1 flex items-center ${className}`>
   <a
     href={href}
     class='p-2 w-full h-full inline-flex items-center gap-2 border border-slate-500 rounded-lg outline-offset-2 outline-slate-800 outline-4 hover:bg-white/50 transition-all'
@@ -22,6 +22,6 @@ const { href, Icon, title, alt } = Astro.props;
         <Icon size='50' />
       )
     }
-    {title}</a
+    <span>{title}</span></a
   >
 </li>
