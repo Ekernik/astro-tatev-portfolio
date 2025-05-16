@@ -1,6 +1,7 @@
 ---
 import { FaInstagram, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 import { IoLogoVenmo } from 'react-icons/io5';
+import { MdAlternateEmail } from 'react-icons/md';
 import { SiZelle } from 'react-icons/si';
 import gigSalad from '../assets/gigsalad.png';
 import SocialLink from './SocialLink.astro';
@@ -26,10 +27,10 @@ import SocialLink from './SocialLink.astro';
   />
 
   <SocialLink
-    href='https://www.linkedin.com/in/tatev-muradyan-598169318/'
-    Icon={FaLinkedin}
-    title='Connect with me on LinkedIn'
-    alt="Tatev's LinkedIn profile"
+    href='mailto:tateviolin@gmail.com'
+    Icon={MdAlternateEmail}
+    title='Contact me via Email'
+    alt="Tatev's email address"
   />
 
   <SocialLink
@@ -37,6 +38,13 @@ import SocialLink from './SocialLink.astro';
     Icon={FaTelegramPlane}
     title='Message me on Telegram'
     alt="Tatev's Telegram profile"
+  />
+
+  <SocialLink
+    href='https://www.linkedin.com/in/tatev-muradyan-598169318/'
+    Icon={FaLinkedin}
+    title='Connect with me on LinkedIn'
+    alt="Tatev's LinkedIn profile"
   />
 
   <div>
